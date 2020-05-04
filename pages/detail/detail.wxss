@@ -1,0 +1,15 @@
+.swiper-class{
+  height: 600rpx;
+}
+#detail{
+  padding-top: 88rpx;
+  padding-bottom: 120rpx;
+}
+.scroll{
+  height: calc(100% - 88rpx - 120rpx);
+}
+.back-top{
+  position: fixed;
+  bottom: 130rpx;
+  right: 10rpx;
+}

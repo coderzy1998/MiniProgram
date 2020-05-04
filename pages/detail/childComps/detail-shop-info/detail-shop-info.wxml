@@ -1,0 +1,36 @@
+<!--pages/detail/childComps/detail-shop-info/detail-shop-info.wxml-->
+<wxs src="./toFixd.wxs" module="Fixed"></wxs>
+<view class="shop-info">
+    <view class="shop-top">
+      <image src="{{shop.logo}}" class="shop-img" />
+      <text class="title">{{shop.name}}</text>
+    </view>
+    <view class="shop-middle">
+      <view class="shop-middle-item shop-middle-left">
+        <view class="info-sells">
+          <view class="sells-count">
+            {{Fixed.toFixed(shop.sells)}}
+          </view>
+          <view class="sells-text">总销量</view>
+        </view>
+        <view class="info-goods">
+          <view class="goods-count">
+            {{shop.goodsCount}}
+          </view>
+          <view class="goods-text">全部宝贝</view>
+        </view>
+      </view>
+      <view class="shop-middle-item shop-middle-right">
+        <block wx:for="{{shop.score}}" wx:key="index">
+          <view class="table">
+            <text class="td">{{item.name}}</text>
+            <text class="score {{item.isBetter ? 'score-better':''}}">{{item.score}}</text>
+            <text class="better {{item.isBetter ? 'better-more' :''}}">{{item.isBetter ? '高':'低'}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="shop-bottom">
+      <view class="enter-shop">进店逛逛</view>
+    </view>
+  </view>

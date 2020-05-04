@@ -1,0 +1,17 @@
+<view class="param-info" wx:if="{{Object.keys(paramInfo).length !== 0}}">
+    <view wx:for="{{paramInfo.sizes}}"
+           class="info-size table" wx:key="index" wx:for-item="table">
+      <view class="tr" wx:for="{{table}}" wx:key="indey" wx:for-item="tr">
+        <text class="td" wx:for="{{tr}}" wx:for-item="td" wx:key="indez">{{td}}</text>
+      </view>
+    </view>
+    <view class="info-param table">
+      <view class="tr" wx:for="{{paramInfo.infos}}" wx:key="index" wx:for-item="info">
+        <text class="info-param-key key">{{info.key}}</text>
+        <text class="param-value td">{{info.value}}</text>
+      </view>
+    </view>
+    <view class="info-img" wx:if="{{paramInfo.image.length !== 0}}">
+      <image src="{{paramInfo.image}}" alt="" mode="widthFix" />
+    </view>
+  </view>

@@ -1,0 +1,20 @@
+.nav-bar{
+  position: fixed;
+  z-index: 9;
+  background-color: #fff;
+  width: 100%;
+}
+.center{
+  display: flex;
+}
+.title{
+  flex: 1;
+}
+.img{
+  width: 44rpx;
+  height: 44rpx;
+  vertical-align: middle;
+}
+.active{
+  color: #ff5777;
+}

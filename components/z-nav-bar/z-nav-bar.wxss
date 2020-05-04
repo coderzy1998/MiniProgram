@@ -1,0 +1,12 @@
+.nav-bar{
+  display: flex;
+  text-align: center;
+  height:88rpx;
+  line-height: 88rpx;
+}
+.center{
+  flex: 1;
+}
+.left,.right{
+  width: 120rpx;
+}

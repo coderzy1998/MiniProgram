@@ -1,0 +1,8 @@
+<!-- pages/home/home.wxml -->
+<z-swiper list="{{banners}}" swiper-class="swiper-class"></z-swiper>
+<z-recommend recommend="{{recommend}}" bind:imgLoad="imgLoad"></z-recommend>
+<z-popular></z-popular>
+<z-tab-controll title="{{titles}}" bind:itemClick="itemClick" class="{{isShowTab ? 'fixed' :''}}" id="tab-controll"></z-tab-controll>
+<z-tab-controll title="{{titles}}" bind:itemClick="itemClick" wx:if="{{isShowTab}}"></z-tab-controll>
+<z-goods goodsList="{{goods[currentType].list}}"></z-goods>
+<z-back-top wx:if="{{isShowBackTop}}" back="back"/>

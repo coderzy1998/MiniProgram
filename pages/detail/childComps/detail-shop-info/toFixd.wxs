@@ -1,0 +1,9 @@
+function toFixed(num)
+{
+  if(num<10000)return num
+  return (num/10000).toFixed(1) +'万'
+}
+
+module.exports={
+  toFixed:toFixed
+}

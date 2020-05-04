@@ -1,0 +1,9 @@
+<view class="goods-item" bind:tap="itemClick" data-iid="{{item.iid}}">
+  <image src="{{item.show.img || item.image}}" mode="widthFix" class="img" lazy-load/>
+  <view class="goods-info">
+    <text class="title">{{item.title}}</text>
+    <text class="price">￥{{item.price}}</text>
+    <image class="icon" src="/assets/common/collect.svg" />
+    <text class="collect">{{item.cfav}}</text>
+  </view>
+</view>

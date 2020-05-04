@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents":{
+    "z-nav-bar":"/components/z-nav-bar/z-nav-bar"
+  }
+}

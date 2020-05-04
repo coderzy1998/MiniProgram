@@ -1,0 +1,69 @@
+.comment-info {
+  padding: 10rpx 24rpx;
+  color: #333;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+
+.info-header {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid rgba(0,0,0,.1);
+}
+
+.header-title {
+  float: left;
+  font-size: 30rpx;
+}
+
+.header-more {
+  float: right;
+  margin-right: 20rpx;
+  font-size: 26rpx;
+}
+
+.info-user {
+  padding: 20rpx 0 10rpx;
+}
+
+.info-user image {
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 50%;
+}
+
+.info-user text {
+  position: relative;
+  font-size: 30rpx;
+  top: -30rpx;
+  margin-left: 20rpx;
+}
+
+.info-detail {
+  padding: 0 10rpx 30rpx;
+}
+
+.info-detail text {
+  font-size: 28rpx;
+  color: #777;
+  line-height: 1.5;
+}
+
+.info-detail .info-other {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+
+.info-other .date {
+  margin-right: 16rpx;
+}
+
+.info-imgs {
+  margin-top: 20rpx;
+}
+
+.image {
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 10rpx;
+}

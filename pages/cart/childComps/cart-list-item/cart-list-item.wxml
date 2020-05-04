@@ -1,0 +1,21 @@
+<!--pages/cart/childCpns/cart-list-item/cart-list-item.wxml-->
+<view class='cart-list-item' bind:tap="toDetail">
+  <view class='item-icon'>
+    <z-check-icon catch:tap='onCheckClick' data-index="{{index}}" isChecked="{{goods.checked}}" />
+  </view>
+  <view class='item-img'>
+    <image src="{{goods.image}}" mode='aspectFill'/>
+  </view>
+  <view class='item-info'>
+    <view class='title'>{{goods.title}}</view>
+    <view class='desc'>{{goods.desc}}</view>
+    <view class='price-count'>
+      <view class='price'>¥{{goods.price}}</view>
+      <button size="mini" catch:tap="sub" data-index="{{index}}" class="itemButton">-</button>
+      <input class='count' value="{{goods.count}}" type="number" 
+                           catch:tap="input" bindblur="blur" 
+                           data-index="{{index}}" confirm-type="done" />
+      <button size="mini" catch:tap="add" data-index="{{index}}" class="itemButton">+</button>
+    </view>
+  </view>
+</view>

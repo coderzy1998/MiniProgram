@@ -1,0 +1,93 @@
+/* pages/detail/childComps/detail-shop-info/detail-shop-info.wxss */
+.shop-img{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  border: 2rpx solid rgba(0, 0, 0, .1);
+}
+.shop-info {
+  padding: 50rpx 16rpx;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+.shop-top{
+  display: flex;
+  align-items: center;
+  line-height: 90rpx;
+}
+.title{
+  margin-left: 30rpx;
+  vertical-align: center;
+}
+.shop-middle{
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.shop-middle-item{
+  flex: 1;
+}
+.shop-middle-left{
+  display: flex;
+  justify-content: space-evenly;
+  color: #333;
+  text-align: center;
+  border-right: 2rpx solid rgba(0,0,0,.1);
+}
+.sells-count, .goods-count {
+  font-size: 36rpx;
+}
+
+.sells-text, .goods-text {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+
+.shop-middle-right {
+  font-size: 26rpx;
+  color: #333;
+}
+
+.shop-middle-right .table {
+  width: 240rpx;
+  margin-left: 60rpx;
+}
+
+.shop-middle-right .td {
+  padding: 10rpx;
+}
+
+.shop-middle-right .score {
+  color: #5ea732;
+  padding: 10rpx;
+  width: 70rpx;
+  display: inline-block;
+}
+.shop-middle-right .score-better {
+  color: #f13e3a;
+}
+
+.shop-middle-right .better {
+  background-color: #5ea732;
+  color: #fff;
+  text-align: center;
+}
+
+.shop-middle-right .better-more{
+  background-color: #f13e3a;
+}
+
+.shop-bottom {
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.enter-shop {
+  display: inline-block;
+  font-size: 28rpx;
+  background-color: #f2f5f8;
+  width: 300rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 20rpx;
+}

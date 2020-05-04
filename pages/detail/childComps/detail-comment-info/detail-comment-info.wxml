@@ -1,0 +1,22 @@
+<view wx:if="{{Object.keys(commentInfo).length !== 0}}" class="comment-info">
+  <view class="info-header">
+    <view class="header-title">用户评价</view>
+    <view class="header-more">更多</view>
+  </view>
+  <view class="info-user">
+    <image src="{{commentInfo.user.avatar}}" alt="" />
+    <text>{{commentInfo.user.uname}}</text>
+  </view>
+  <view class="info-detail">
+    <text>{{commentInfo.content}}</text>
+    <view class="info-other">
+      <text class="date">{{commentInfo.created}}</text>
+      <text>{{commentInfo.style}}</text>
+    </view>
+    <view class="info-imgs">
+      <block wx:for="{{commentInfo.images}}" wx:key="index">
+        <image src="{{item}}" mode="widthFix" class="image" />
+      </block>
+    </view>
+  </view>
+</view>

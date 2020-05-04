@@ -1,0 +1,9 @@
+<!--components/z-swiper/z-swiper.wxml-->
+<swiper class="swiper-class" circular autoplay indicator-dots indicator-active-color="#ff5777" interval="2500"
+  duration="250">
+  <block wx:for="{{list}}" wx:key="index">
+    <swiper-item class="swiper-item">
+      <image src="{{item.image || item}}" mode="widthFix" />
+    </swiper-item>
+  </block>
+</swiper>

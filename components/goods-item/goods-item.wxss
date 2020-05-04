@@ -1,0 +1,32 @@
+.goods-item{
+  padding-bottom: 80rpx;
+}
+.img{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.goods-info {
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.title{
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 6rpx;
+}
+.price{
+  color: #ff5777;
+}
+.icon{
+  width: 30rpx;
+  height: 30rpx;
+  padding: 0 6rpx 0 10rpx;
+  position: relative;
+  top: 5rpx;
+}

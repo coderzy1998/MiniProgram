@@ -1,0 +1,66 @@
+.base-info {
+  margin-top: 30rpx;
+  padding: 0 16rpx;
+  color: #999;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+
+.info-title {
+  /*font-size: 14px;*/
+  color: #222
+}
+
+.info-price {
+  margin-top: 20rpx;
+}
+
+.info-price .n-price {
+  font-size: 48rpx;
+  color: #ff5777;
+}
+
+.info-price .o-price {
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  text-decoration: line-through;
+}
+
+.info-price .discount {
+  font-size: 24rpx;
+  padding: 4rpx 10rpx;
+  color: #fff;
+  background-color: rgb(241, 62, 58);
+  border-radius: 16rpx;
+  margin-left: 10rpx;
+
+  /*让元素上浮一些: 使用相对定位即可*/
+  position: relative;
+  top: -16rpx;
+}
+
+.info-other {
+  margin-top: 30rpx;
+  line-height: 60rpx;
+  display: flex;
+  font-size: 26rpx;
+  border-bottom: 2rpx solid rgba(100,100,100,.1);
+  justify-content: space-between;
+}
+
+.info-service {
+  display: flex;
+  justify-content: space-between;
+  line-height: 120rpx;
+}
+
+.info-service-item .image{
+  width: 28rpx;
+  height: 28rpx;
+  position: relative;
+  top: 4rpx;
+}
+
+.info-service-item .text {
+  font-size: 26rpx;
+  color: #333;
+}

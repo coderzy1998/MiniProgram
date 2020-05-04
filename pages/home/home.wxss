@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.swiper-class{
+  height: 400rpx;
+}
+.back{
+  position: fixed;
+  bottom: 10rpx;
+  right: 10rpx;
+}

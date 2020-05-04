@@ -1,0 +1,38 @@
+.param-info {
+  padding: 40rpx 30rpx;
+  font-size: 28rpx;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+
+.param-info .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.param-info .table .tr {
+  height: 84rpx;
+  display: flex;
+  line-height: 84rpx;
+}
+
+.param-info .table .tr .td {
+  border-bottom: 2rpx solid rgba(100,100,100,.1);
+  flex: 1;
+}
+
+.info-param-key {
+  /*当value的数据量比较大的时候, 会挤到key,所以给一个固定的宽度*/
+  width: 150rpx;
+}
+
+.info-param {
+  border-top: 2rpx solid rgba(0,0,0,.1);
+}
+
+.param-value {
+  color: #eb4868
+}
+
+.info-img image {
+  width: 100%;
+}

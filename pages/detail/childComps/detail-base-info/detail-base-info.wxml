@@ -1,0 +1,21 @@
+<view wx:if="Object.keys(goods).length !== 0" class="base-info">
+  <view class="info-title">{{goods.title}}</view>
+  <view class="info-price">
+    <text class="n-price">{{goods.newPrice}}</text>
+    <text class="o-price">{{goods.oldPrice}}</text>
+    <text wx:if="goods.discount" class="discount">{{goods.discount}}</text>
+  </view>
+  <view class="info-other">
+    <text>{{goods.columns[0]}}</text>
+    <text>{{goods.columns[1]}}</text>
+    <text>{{goods.services[goods.services.length-1].name}}</text>
+  </view>
+  <view class="info-service">
+    <block wx:for="{{goods.services}}" wx:key="index">
+      <text class="info-service-item">
+        <image src="{{item.icon}}" class="image" />
+        <text class="text">{{item.name}}</text>
+      </text>
+    </block>
+  </view>
+</view>

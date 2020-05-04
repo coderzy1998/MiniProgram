@@ -1,0 +1,12 @@
+<z-nav-bar class="nav-bar">
+  <view class="left" slot="left" bind:tap="back">
+    <image class="img" src="/assets/common/back.svg" />
+  </view>
+  <view slot="center" class="center">
+    <block wx:for="{{navbarList}}" wx:key="index">
+      <text class="title {{currentIndex===index?'active':''}}" 
+      bind:tap="itemClick" 
+      data-index="{{index}}">{{item}}</text>
+    </block>
+  </view>
+</z-nav-bar>

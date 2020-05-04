@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cart-bottom-bar":"./childComps/cart-bottom-bar/cart-bottom-bar",
+    "cart-list-item":"./childComps/cart-list-item/cart-list-item"
+  },
+  "navigationBarTitleText": "购物车"
+}
