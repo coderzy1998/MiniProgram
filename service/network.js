@@ -2,7 +2,7 @@ export default function request(options){
   wx.showLoading({
     title: '数据正在加载中',
   })
-  const baseUrl='http://152.136.185.210:8000/api/h8'
+  const baseUrl='新接口加老师微信coderwhy002'
   return new Promise((resolve,reject) => 
   {
     wx.request({
